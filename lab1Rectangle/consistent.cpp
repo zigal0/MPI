@@ -23,7 +23,7 @@ int main(int argc, char **argv) {
     double time_start, time_finish; // measure time
     double time = 1, space = 1; // boundaries
     int t, s; // iterations
-    int rowT = 10, colS = 10; // quantity of steps (net)
+    int rowT = 100, colS = 100; // quantity of steps (net)
     double timeStep = time / rowT, spaceStep = space / colS; // steps
     time_start = MPI_Wtime();
 

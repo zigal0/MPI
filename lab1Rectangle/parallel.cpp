@@ -23,7 +23,7 @@ int main(int argc, char **argv) {
     double time_start, time_finish; // measure time
     double time = 1, space = 1; // boundaries
     int t, s; // iterations
-    int rowT = 30, colS = 60; // quantity of steps (net)
+    int rowT = 3000, colS = 2520; // quantity of steps (net)
     int localSize; // quantity of iterations in every process
     int dest, src; // destination and source addresses for send & receive
     MPI_Status status; // status for checking delivery
@@ -37,7 +37,7 @@ int main(int argc, char **argv) {
         if ((ss >> rowT).fail()) {
             // it's not convertible to int
             std::cout << "Error" << std::endl;
-            return  0;
+            return 0;
         }
         if (argc > 2) {
             if (strcmp(argv[2], "+s") == 0) {
