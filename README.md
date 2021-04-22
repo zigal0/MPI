@@ -12,3 +12,4 @@ First graph for results with quantity of processes from 1 to 5 and second one fo
 Two realizations: parallel.c and consistent.c.
 There is bash script "Start" for run programs with different quantity of process (from 1 to 10) and you should type quantity of time steps as parameter. Execution time will be outputted in File results.txt in OutPut. 
 If you add in bash script +s then results of modeling will be outputed in OutPut ("solution" + the number of processes + ".csv").
+I took task from this site (there is analytical solution for this transport equation): http://math.phys.msu.ru/data/374/tema5.pdf
