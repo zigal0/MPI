@@ -1,0 +1,10 @@
+#!/bin/bash
+# Add "+s" for output solutions
+cd OutPut
+rm *
+cd ..
+for (( i = 1; i <= 5; i++ ))
+do 
+mpirun -np $i ./lab1Rectangle $1 +s
+done > OutPut/results.txt
+echo "Finished"

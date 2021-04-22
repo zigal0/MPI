@@ -1,0 +1,10 @@
+#!/bin/bash
+# This is a comment
+cd OutPut
+rm *
+cd ..
+for (( i = 1; i <= 5; i++ ))
+do
+mpirun -np $i ./lab1Triangle $1
+done > OutPut/results.txt
+echo "Finished"

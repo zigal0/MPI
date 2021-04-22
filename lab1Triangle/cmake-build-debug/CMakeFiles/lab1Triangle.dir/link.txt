@@ -1,0 +1,1 @@
+/usr/bin/mpicc -g CMakeFiles/lab1Triangle.dir/parallel.c.o -o lab1Triangle 

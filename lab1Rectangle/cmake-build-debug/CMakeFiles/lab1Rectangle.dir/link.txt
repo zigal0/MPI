@@ -1,0 +1,1 @@
+/usr/bin/mpic++ -g CMakeFiles/lab1Rectangle.dir/parallel.cpp.o -o lab1Rectangle 
