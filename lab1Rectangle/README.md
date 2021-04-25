@@ -7,12 +7,12 @@ The task was the realization consistent and parallel solution for transport equa
 ### Scheme
 To solve this problem I use rectangle scheme:
 
-![](https://github.com/zigal0/MPI/blob/main/lab1Rectangle/Results/Solution.png)
+![](https://github.com/zigal0/MPI/blob/main/theory/Scheme.png)
 
 ### Solution
 Here you can solution of this equation (timeSteps = 100, spaceSteps = 100):
 
-![](https://github.com/zigal0/MPI/blob/main/theory/Scheme.png)
+![](https://github.com/zigal0/MPI/blob/main/lab1Rectangle/Results/Solution.png)
 
 So there are two realizations: parallel.c and consistent.c. Also you can find realization schemes such as explicit left corner and cross (commented). 
 You can find these schemes in folder theory "lab1.pdf".
