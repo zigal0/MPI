@@ -13,7 +13,7 @@ typedef struct thread_data_t {
 
 pthread_mutex_t lock;
 double res = 0;
-int power = -10;
+int power = -1;
 
 double func(double x);
 
@@ -31,6 +31,7 @@ int main() {
     std::cin >> rightB;
     std::cout << "Enter the power for desired accuracy (e = 10 ^(p)), p = ";
     std::cin >> power;
+
     int num = (int) (1 / (M_PI * leftB));
     double cur = leftB; // current x
     int i, rc;
@@ -75,7 +76,7 @@ void *mythread(void *arg) {
     double part = 0;
     auto *data = (thread_data_t *) arg;
     double step = pow((6480 * pow(data->start, 8) * pow(10, power)) / (data->finish - data->start), 0.25);
-    int steps = (int) ((data->finish - data->start) / step);
+    int steps = (int) ((data->finish - data->start) / step) + 1;
     step = (data->finish - data->start) / steps;
     double x = data->start;
     for (int i = 0; i < steps; ++i) {

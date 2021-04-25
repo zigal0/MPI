@@ -77,7 +77,7 @@ void *mythread(void *arg) {
     double part = 0;
     auto *data = (thread_data_t *) arg;
     double step = pow((6480 * pow(data->start, 8) * pow(10, power)) / (data->finish - data->start), 0.25);
-    int steps = (int) ((data->finish - data->start) / step);
+    int steps = (int) ((data->finish - data->start) / step) + 1;
     step = (data->finish - data->start) / steps;
     double x = data->start;
     for (int i = 0; i < steps; ++i) {

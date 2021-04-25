@@ -82,7 +82,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/zigal0/Prog/ParProg/git/lab2/integral2.cpp">
+		<Unit filename="/home/zigal0/Prog/ParProg/git/lab2/integral3.cpp">
 			<Option target="lab2"/>
 		</Unit>
 		<Unit filename="/home/zigal0/Prog/ParProg/git/lab2/CMakeLists.txt">

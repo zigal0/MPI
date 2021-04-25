@@ -76,27 +76,27 @@ include CMakeFiles/lab2.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/lab2.dir/flags.make
 
-CMakeFiles/lab2.dir/integral2.cpp.o: CMakeFiles/lab2.dir/flags.make
-CMakeFiles/lab2.dir/integral2.cpp.o: ../integral2.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zigal0/Prog/ParProg/git/lab2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/lab2.dir/integral2.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lab2.dir/integral2.cpp.o -c /home/zigal0/Prog/ParProg/git/lab2/integral2.cpp
+CMakeFiles/lab2.dir/integral3.cpp.o: CMakeFiles/lab2.dir/flags.make
+CMakeFiles/lab2.dir/integral3.cpp.o: ../integral3.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zigal0/Prog/ParProg/git/lab2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/lab2.dir/integral3.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lab2.dir/integral3.cpp.o -c /home/zigal0/Prog/ParProg/git/lab2/integral3.cpp
 
-CMakeFiles/lab2.dir/integral2.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab2.dir/integral2.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zigal0/Prog/ParProg/git/lab2/integral2.cpp > CMakeFiles/lab2.dir/integral2.cpp.i
+CMakeFiles/lab2.dir/integral3.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab2.dir/integral3.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zigal0/Prog/ParProg/git/lab2/integral3.cpp > CMakeFiles/lab2.dir/integral3.cpp.i
 
-CMakeFiles/lab2.dir/integral2.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab2.dir/integral2.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zigal0/Prog/ParProg/git/lab2/integral2.cpp -o CMakeFiles/lab2.dir/integral2.cpp.s
+CMakeFiles/lab2.dir/integral3.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab2.dir/integral3.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zigal0/Prog/ParProg/git/lab2/integral3.cpp -o CMakeFiles/lab2.dir/integral3.cpp.s
 
 # Object files for target lab2
 lab2_OBJECTS = \
-"CMakeFiles/lab2.dir/integral2.cpp.o"
+"CMakeFiles/lab2.dir/integral3.cpp.o"
 
 # External object files for target lab2
 lab2_EXTERNAL_OBJECTS =
 
-lab2: CMakeFiles/lab2.dir/integral2.cpp.o
+lab2: CMakeFiles/lab2.dir/integral3.cpp.o
 lab2: CMakeFiles/lab2.dir/build.make
 lab2: /usr/lib/x86_64-linux-gnu/libpthread.so
 lab2: CMakeFiles/lab2.dir/link.txt

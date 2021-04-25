@@ -142,32 +142,32 @@ lab2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab2.dir/build.make CMakeFiles/lab2.dir/build
 .PHONY : lab2/fast
 
-integral2.o: integral2.cpp.o
+integral3.o: integral3.cpp.o
 
-.PHONY : integral2.o
+.PHONY : integral3.o
 
 # target to build an object file
-integral2.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab2.dir/build.make CMakeFiles/lab2.dir/integral2.cpp.o
-.PHONY : integral2.cpp.o
+integral3.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab2.dir/build.make CMakeFiles/lab2.dir/integral3.cpp.o
+.PHONY : integral3.cpp.o
 
-integral2.i: integral2.cpp.i
+integral3.i: integral3.cpp.i
 
-.PHONY : integral2.i
+.PHONY : integral3.i
 
 # target to preprocess a source file
-integral2.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab2.dir/build.make CMakeFiles/lab2.dir/integral2.cpp.i
-.PHONY : integral2.cpp.i
+integral3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab2.dir/build.make CMakeFiles/lab2.dir/integral3.cpp.i
+.PHONY : integral3.cpp.i
 
-integral2.s: integral2.cpp.s
+integral3.s: integral3.cpp.s
 
-.PHONY : integral2.s
+.PHONY : integral3.s
 
 # target to generate assembly for a file
-integral2.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab2.dir/build.make CMakeFiles/lab2.dir/integral2.cpp.s
-.PHONY : integral2.cpp.s
+integral3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab2.dir/build.make CMakeFiles/lab2.dir/integral3.cpp.s
+.PHONY : integral3.cpp.s
 
 # Help Target
 help:
@@ -178,9 +178,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... lab2"
-	@echo "... integral2.o"
-	@echo "... integral2.i"
-	@echo "... integral2.s"
+	@echo "... integral3.o"
+	@echo "... integral3.i"
+	@echo "... integral3.s"
 .PHONY : help
 
 

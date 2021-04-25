@@ -23,15 +23,16 @@ void *mythread(void *arg);
 int main() {
     double leftB = 0.001, rightB = 1; // boundaries
     // data
-    std::cout << "Integral of sin(1/x) in the range x = leftB..rightB with accuracy (e = 10 ^(p)" << std::endl;
-    std::cout << "The interval is divided by the intervals between zeros with the same numbers of steps: " << std::endl;
-    std::cout << "Enter range :" << std::endl;
-    std::cout << "leftB = ";
-    std::cin >> leftB;
-    std::cout << "rightB = ";
-    std::cin >> rightB;
-    std::cout << "Enter the power for desired accuracy (e = 10 ^(p)), p = ";
-    std::cin >> power;
+//    std::cout << "Integral of sin(1/x) in the range x = leftB..rightB with accuracy (e = 10 ^(p)" << std::endl;
+//    std::cout << "The interval is divided by the intervals between zeros with the same numbers of steps: " << std::endl;
+//    std::cout << "Enter range :" << std::endl;
+//    std::cout << "leftB = ";
+//    std::cin >> leftB;
+//    std::cout << "rightB = ";
+//    std::cin >> rightB;
+//    std::cout << "Enter the power for desired accuracy (e = 10 ^(p)), p = ";
+//    std::cin >> power;
+
     int num = (int) (1 / (M_PI * leftB));
     double cur = leftB; // current x
     int i, rc;
