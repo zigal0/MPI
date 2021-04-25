@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/zigal0/Prog/ParProg/git/lab2/integral2.cpp
+pthread.h
+-
+iostream
+-
+cmath
+-
+chrono
+-
+

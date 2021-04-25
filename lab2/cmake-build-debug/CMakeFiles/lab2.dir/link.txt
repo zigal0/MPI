@@ -1,0 +1,1 @@
+/usr/bin/c++  -Werror -Wall -g -g CMakeFiles/lab2.dir/integral2.cpp.o -o lab2  /usr/lib/x86_64-linux-gnu/libpthread.so 
