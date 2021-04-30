@@ -23,7 +23,7 @@ int main(int argc, char **argv) {
     double time_start, time_finish; // measure time
     double time = 1, space = 1; // boundaries
     int t, s; // iterations
-    int rowT = 3000, colS = 2520; // quantity of steps (net)
+    int rowT = 1000, colS = 1000; // quantity of steps (net)
     int localSize; // quantity of iterations in every process
     int dest, src; // destination and source addresses for send & receive
     MPI_Status status; // status for checking delivery
@@ -72,11 +72,11 @@ int main(int argc, char **argv) {
             res[0][t] = FunctionTime0(t * timeStep);
         }
         // bottom boundary
-        for (s = 0; s <= colS; s++) {
+        for (s = 0; s < localSize; s++) {
             res[s][0] = FunctionSpace0(s * spaceStep);
         }
-        for (t = 0; t <= rowT - 1; t++) {
-            for (s = startSpace + 1; s < startSpace + localSize; s++) {
+        for (t = 0; t < rowT; t++) {
+            for (s = 1; s < localSize; s++) {
                 res[s][t + 1] = ((2 * spaceStep * timeStep) / (spaceStep + timeStep * a)) *
                                 (FunctionF((s + 0.5) * spaceStep, (t + 0.5) * timeStep) + a *
                                                                                           (res[s - 1][t + 1] -
@@ -91,6 +91,20 @@ int main(int argc, char **argv) {
         for (int i = 1; i < size; i++) {
             for (int j = (localSize - 1) * i + 1; j < (localSize - 1) * (i + 1) + 1; j++) {
                 MPI_Recv(res[j], (rowT + 1), MPI_DOUBLE, i, 6, MPI_COMM_WORLD, &status);
+            }
+        }
+        // check for full solution
+        if (colS % size != 0) {
+            for (t = 0; t < rowT; t++) {
+                for (s = (localSize - 1) * size + 1; s <= colS; s++) {
+                    res[s][t + 1] = ((2 * spaceStep * timeStep) / (spaceStep + timeStep * a)) *
+                                    (FunctionF((s + 0.5) * spaceStep, (t + 0.5) * timeStep) + a *
+                                                                                              (res[s - 1][t + 1] -
+                                                                                               res[s][t] +
+                                                                                               res[s - 1][t]) /
+                                                                                              (2 * spaceStep) +
+                                     (res[s - 1][t] - res[s - 1][t + 1] + res[s][t]) / (2 * timeStep));
+                }
             }
         }
         time_finish = MPI_Wtime(); // time of finish
@@ -121,7 +135,7 @@ int main(int argc, char **argv) {
         for (s = 0, i = startSpace; s < localSize; s++, i++) {
             res[s][0] = FunctionSpace0(i * spaceStep);
         }
-        for (t = 0; t <= rowT - 1; t++) {
+        for (t = 0; t < rowT; t++) {
             // receive boundary value
             MPI_Recv(&res[0][t + 1], 1, MPI_DOUBLE, src, 5, MPI_COMM_WORLD, &status);
             for (i = startSpace + 1, s = 1; s < localSize; s++, i++) {
