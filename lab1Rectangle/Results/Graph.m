@@ -1,5 +1,5 @@
 % soluting graphing
-res = csvread('solution5.csv');
+res = csvread('solution9.csv');
 surf(res);
 check3 = csvread('solution3.csv');
 check8 = csvread('solution8.csv');
