@@ -1,4 +1,4 @@
-# Install script for directory: /home/zigal0/Prog/ParProg/git/lab1Rectangle
+# Install script for directory: /home/zigal0/dev/Prog/ParProg/git/lab1Rectangle
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/zigal0/Prog/ParProg/git/lab1Rectangle/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/zigal0/dev/Prog/ParProg/git/lab1Rectangle/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

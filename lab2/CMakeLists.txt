@@ -7,7 +7,8 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Werror -Wall -g")
 set(SOURCE_FILES
 #        integral1.cpp
 #        integral2.cpp
-        integral3.cpp
+#        integral3.cpp
+        integral4.cpp
         )
 
 add_executable(lab2 ${SOURCE_FILES})

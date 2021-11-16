@@ -19,11 +19,11 @@ double FunctionF(double x, double t);
 
 int main(int argc, char **argv) {
     std::string path = fs::current_path();
-    double a = 2;
+    double a = 2; // coefficient
     double time_start, time_finish; // measure time
     double time = 1, space = 1; // boundaries
     int t, s; // iterations
-    int rowT = 100, colS = 100; // quantity of steps (net)
+    int rowT = 1000, colS = 1000; // quantity of steps (net)
     int dest, src; // destination and source addresses for send & receive
     MPI_Status status; // status for checking delivery
     MPI_Request request; // status of delivery

@@ -1,4 +1,4 @@
-/home/zigal0/JetBrains/apps/CLion/ch-0/211.6693.114/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/zigal0/Prog/ParProg/git/lab1Rectangle
+/home/zigal0/JetBrains/apps/CLion/ch-0/212.5457.51/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /home/zigal0/dev/Prog/ParProg/git/lab1Rectangle
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/zigal0/Prog/ParProg/git/lab1Rectangle/cmake-build-debug
+-- Build files have been written to: /home/zigal0/dev/Prog/ParProg/git/lab1Rectangle/cmake-build-debug

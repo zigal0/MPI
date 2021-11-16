@@ -44,7 +44,6 @@ int main() {
 
     auto begin = std::chrono::steady_clock::now(); // start time
     steps = (int) ((rightB - 1 / M_PI) / pow((6480 * pow(1 / M_PI, 8) * pow(10, power)) / (rightB - 1 / M_PI), 0.25));
-
     for (i = num; i > 0; --i) {
         thr_data[i].start = cur;
         cur = 1 / (M_PI * i);
