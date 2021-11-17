@@ -10,9 +10,8 @@ add_executable(lab3
 #        src/consistentMain.c
 #        src/parallelMain.c
 #        src/parallelMainOther.c
-        src/consistent2d.c
-#        src/parallel2d.c
-
+#        src/consistent2d.c
+        src/parallel2d.c
         )
 
 target_link_libraries(lab3 ${MPI_C_LIBRARIES} m)

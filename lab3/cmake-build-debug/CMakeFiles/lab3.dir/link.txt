@@ -1,1 +1,1 @@
-mpicc -g CMakeFiles/lab3.dir/src/consistent2d.c.o -o lab3  -lm 
+mpicc -g CMakeFiles/lab3.dir/src/parallel2d.c.o -o lab3  -lm 

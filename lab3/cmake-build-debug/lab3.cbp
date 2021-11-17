@@ -78,7 +78,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/zigal0/dev/Prog/ParProg/git/lab3/src/consistent2d.c">
+		<Unit filename="/home/zigal0/dev/Prog/ParProg/git/lab3/src/parallel2d.c">
 			<Option target="lab3"/>
 		</Unit>
 		<Unit filename="/home/zigal0/dev/Prog/ParProg/git/lab3/CMakeLists.txt">

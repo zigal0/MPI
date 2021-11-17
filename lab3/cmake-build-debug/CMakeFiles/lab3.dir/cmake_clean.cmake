@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/lab3.dir/src/consistent2d.c.o"
+  "CMakeFiles/lab3.dir/src/parallel2d.c.o"
   "lab3"
   "lab3.pdb"
 )

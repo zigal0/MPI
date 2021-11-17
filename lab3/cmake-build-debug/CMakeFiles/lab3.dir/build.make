@@ -66,27 +66,27 @@ include CMakeFiles/lab3.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/lab3.dir/flags.make
 
-CMakeFiles/lab3.dir/src/consistent2d.c.o: CMakeFiles/lab3.dir/flags.make
-CMakeFiles/lab3.dir/src/consistent2d.c.o: ../src/consistent2d.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zigal0/dev/Prog/ParProg/git/lab3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/lab3.dir/src/consistent2d.c.o"
-	mpicc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lab3.dir/src/consistent2d.c.o -c /home/zigal0/dev/Prog/ParProg/git/lab3/src/consistent2d.c
+CMakeFiles/lab3.dir/src/parallel2d.c.o: CMakeFiles/lab3.dir/flags.make
+CMakeFiles/lab3.dir/src/parallel2d.c.o: ../src/parallel2d.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zigal0/dev/Prog/ParProg/git/lab3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/lab3.dir/src/parallel2d.c.o"
+	mpicc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lab3.dir/src/parallel2d.c.o -c /home/zigal0/dev/Prog/ParProg/git/lab3/src/parallel2d.c
 
-CMakeFiles/lab3.dir/src/consistent2d.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lab3.dir/src/consistent2d.c.i"
-	mpicc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zigal0/dev/Prog/ParProg/git/lab3/src/consistent2d.c > CMakeFiles/lab3.dir/src/consistent2d.c.i
+CMakeFiles/lab3.dir/src/parallel2d.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lab3.dir/src/parallel2d.c.i"
+	mpicc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zigal0/dev/Prog/ParProg/git/lab3/src/parallel2d.c > CMakeFiles/lab3.dir/src/parallel2d.c.i
 
-CMakeFiles/lab3.dir/src/consistent2d.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lab3.dir/src/consistent2d.c.s"
-	mpicc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zigal0/dev/Prog/ParProg/git/lab3/src/consistent2d.c -o CMakeFiles/lab3.dir/src/consistent2d.c.s
+CMakeFiles/lab3.dir/src/parallel2d.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lab3.dir/src/parallel2d.c.s"
+	mpicc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zigal0/dev/Prog/ParProg/git/lab3/src/parallel2d.c -o CMakeFiles/lab3.dir/src/parallel2d.c.s
 
 # Object files for target lab3
 lab3_OBJECTS = \
-"CMakeFiles/lab3.dir/src/consistent2d.c.o"
+"CMakeFiles/lab3.dir/src/parallel2d.c.o"
 
 # External object files for target lab3
 lab3_EXTERNAL_OBJECTS =
 
-lab3: CMakeFiles/lab3.dir/src/consistent2d.c.o
+lab3: CMakeFiles/lab3.dir/src/parallel2d.c.o
 lab3: CMakeFiles/lab3.dir/build.make
 lab3: CMakeFiles/lab3.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zigal0/dev/Prog/ParProg/git/lab3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable lab3"

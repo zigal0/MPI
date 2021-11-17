@@ -6,12 +6,12 @@
 
 #IncludeRegexTransform: 
 
-/home/zigal0/dev/Prog/ParProg/git/lab3/src/consistent2d.c
+/home/zigal0/dev/Prog/ParProg/git/lab3/src/parallel2d.c
 stdio.h
 -
-math.h
+stdlib.h
 -
-malloc.h
+math.h
 -
 mpi.h
 -

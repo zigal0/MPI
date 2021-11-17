@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/zigal0/dev/Prog/ParProg/git/lab3/src/consistent2d.c" "/home/zigal0/dev/Prog/ParProg/git/lab3/cmake-build-debug/CMakeFiles/lab3.dir/src/consistent2d.c.o"
+  "/home/zigal0/dev/Prog/ParProg/git/lab3/src/parallel2d.c" "/home/zigal0/dev/Prog/ParProg/git/lab3/cmake-build-debug/CMakeFiles/lab3.dir/src/parallel2d.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

@@ -1,6 +1,8 @@
 //
 // Created by zigal0 on 16.11.2021.
 //
+// Consistent realization of 2d task with measuring time
+//
 
 #include <stdio.h>
 #include <math.h>
@@ -12,12 +14,11 @@
 
 int main(int argc, char **argv) {
     int i, j;
-    double time_start, time_finish; // measure time
+    double time_start, time_finish;
     double **a = malloc(ISIZE * sizeof(double *));
     for (i = 0; i < ISIZE; i++) {
         a[i] = malloc(JSIZE * sizeof(double));
     }
-    FILE *ff;
     MPI_Init(&argc, &argv);
     time_start = MPI_Wtime();
     for (i = 0; i < ISIZE; i++) {
@@ -32,7 +33,7 @@ int main(int argc, char **argv) {
     }
     time_finish = MPI_Wtime();
     printf("execution time: %0.6f\n", time_finish - time_start);
-    ff = fopen("output/resultC2d.txt", "w");
+    FILE *ff = fopen("output/resultC2d.txt", "w");
     for (i = 0; i < ISIZE; i++) {
         for (j = 0; j < JSIZE; j++) {
             fprintf(ff, "%f ", a[i][j]);

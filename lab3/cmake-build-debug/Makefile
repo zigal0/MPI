@@ -129,29 +129,29 @@ lab3/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/build
 .PHONY : lab3/fast
 
-src/consistent2d.o: src/consistent2d.c.o
-.PHONY : src/consistent2d.o
+src/parallel2d.o: src/parallel2d.c.o
+.PHONY : src/parallel2d.o
 
 # target to build an object file
-src/consistent2d.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/src/consistent2d.c.o
-.PHONY : src/consistent2d.c.o
+src/parallel2d.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/src/parallel2d.c.o
+.PHONY : src/parallel2d.c.o
 
-src/consistent2d.i: src/consistent2d.c.i
-.PHONY : src/consistent2d.i
+src/parallel2d.i: src/parallel2d.c.i
+.PHONY : src/parallel2d.i
 
 # target to preprocess a source file
-src/consistent2d.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/src/consistent2d.c.i
-.PHONY : src/consistent2d.c.i
+src/parallel2d.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/src/parallel2d.c.i
+.PHONY : src/parallel2d.c.i
 
-src/consistent2d.s: src/consistent2d.c.s
-.PHONY : src/consistent2d.s
+src/parallel2d.s: src/parallel2d.c.s
+.PHONY : src/parallel2d.s
 
 # target to generate assembly for a file
-src/consistent2d.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/src/consistent2d.c.s
-.PHONY : src/consistent2d.c.s
+src/parallel2d.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/src/parallel2d.c.s
+.PHONY : src/parallel2d.c.s
 
 # Help Target
 help:
@@ -162,9 +162,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... lab3"
-	@echo "... src/consistent2d.o"
-	@echo "... src/consistent2d.i"
-	@echo "... src/consistent2d.s"
+	@echo "... src/parallel2d.o"
+	@echo "... src/parallel2d.i"
+	@echo "... src/parallel2d.s"
 .PHONY : help
 
 

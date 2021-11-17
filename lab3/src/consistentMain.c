@@ -1,14 +1,16 @@
 //
 // Created by zigal0 on 16.11.2021.
 //
+// Consistent realization of main task with measuring time
+//
 
 #include <stdio.h>
 #include <math.h>
 #include <mpi.h>
 #include <malloc.h>
 
-#define ISIZE 10
-#define JSIZE 10
+#define ISIZE 1000
+#define JSIZE 1000
 
 int main(int argc, char **argv) {
     int i, j;
@@ -32,7 +34,7 @@ int main(int argc, char **argv) {
     }
     time_finish = MPI_Wtime();
     printf("execution time: %0.6f\n", time_finish - time_start);
-    ff = fopen("output/resultCM10.txt", "w");
+    ff = fopen("output/resultCM.txt", "w");
     for (i = 0; i < ISIZE; i++) {
         for (j = 0; j < JSIZE; j++) {
             fprintf(ff, "%f ", a[i][j]);
